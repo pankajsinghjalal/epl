@@ -237,6 +237,9 @@ sub {
   margin: 0 auto; }
 
 /*header styling*/
+/*header styling*/
+/*header styling*/
+/*header styling*/
 header h1 {
   float: left; }
   header h1 a {
@@ -295,5 +298,88 @@ header .social-header li {
 header .fa {
   font-size: 30px;
   color: #fff; }
+
+/*main styling*/
+/*main styling*/
+/*main styling*/
+/*main styling*/
+main {
+  margin-top: 50px; }
+
+/*gameweek*/
+.gameweek-holder {
+  width: 15%;
+  float: left; }
+
+.gameweek h3 {
+  width: 59%;
+  border-bottom: 4px solid #000;
+  margin-bottom: 10px;
+  font: 20px Lato, sans-serif;
+  text-transform: uppercase; }
+.gameweek li {
+  list-style-type: none;
+  margin-bottom: 10px; }
+  .gameweek li a {
+    padding: 10px 0;
+    display: block;
+    background-color: #4caf50;
+    color: #000;
+    font: 400 14px Lato, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .gameweek li a:hover {
+      background-color: #009dee;
+      color: #fff;
+      transition: all 0.5s ease; }
+
+/*content*/
+.content {
+  width: 70%;
+  float: left; }
+  .content img {
+    width: 100%;
+    height: auto; }
+  .content .separator {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #000; }
+  .content .rows:after {
+    content: "";
+    clear: both;
+    display: table; }
+  .content .half-column {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 3%;
+    float: left; }
+    .content .half-column p {
+      color: #51555b;
+      font: 16px Lato, sans-serif; }
+      .content .half-column p a {
+        width: 20%;
+        padding: 10px;
+        margin-top: 10px;
+        display: block;
+        background-color: #4caf50;
+        color: #fff;
+        font: 16px Lato, sans-serif;
+        text-decoration: none; }
+    .content .half-column a {
+      display: inline-block; }
+      .content .half-column a:hover {
+        opacity: 0.6;
+        transition: opacity 1s ease; }
+    .content .half-column h2 {
+      padding: 2% 0 2%;
+      font: 24px Lato, sans-serif; }
+      .content .half-column h2 a {
+        color: #33363b;
+        text-decoration: none; }
+
+.advertisement {
+  width: 15%;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */
