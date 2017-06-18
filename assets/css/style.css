@@ -256,20 +256,20 @@ header input[type="text"] {
 header input[type="text"]::placeholder {
   font: 14px Lato, sans-serif; }
 header input[type="text"]:focus {
-  border: 2px solid #009dee;
+  border: 2px solid #005AA0;
   transition: border 0.5s; }
 header input[type="submit"] {
   padding: 8px 15px;
   margin-left: -4px;
   border-radius: 0 5px 5px 0;
-  background-color: #009dee;
+  background-color: #005AA0;
   color: #fff;
   font: 14px Lato, sans-serif;
   text-transform: uppercase; }
 header input[type="submit"]:hover {
   background-color: #4caf50; }
 header .navigation {
-  background-color: #009dee; }
+  background-color: #005AA0; }
 header .navigation-flex {
   display: flex;
   justify-content: space-between; }
@@ -284,19 +284,21 @@ header nav li {
     text-transform: uppercase;
     text-decoration: none; }
     header nav li a:hover {
-      background-color: #4caf50;
+      background-color: #fff;
+      box-shadow: 1px 1px 2px 1px #6D6D6D;
+      color: #005AA0;
       transition: all 0.5s ease; }
 header .social-header li {
   float: left;
   list-style-type: none; }
   header .social-header li a {
-    padding: 15px 15px;
+    padding: 18px 15px;
     display: inline-block; }
     header .social-header li a:hover {
-      background-color: #4caf50;
-      transition: all 1s ease; }
+      transform: scale(1.5);
+      transition: all 0.5s ease; }
 header .fa {
-  font-size: 30px;
+  font-size: 24px;
   color: #fff; }
 
 /*main styling*/
@@ -318,19 +320,19 @@ main {
   font: 20px Lato, sans-serif;
   text-transform: uppercase; }
 .gameweek li {
-  list-style-type: none;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  list-style-type: none; }
   .gameweek li a {
-    padding: 10px 0;
+    padding: 12px 0 12px 7px;
+    border-radius: 3px;
     display: block;
-    background-color: #4caf50;
+    background-color: #919191;
     color: #000;
     font: 400 14px Lato, sans-serif;
     text-decoration: none;
     text-transform: uppercase; }
     .gameweek li a:hover {
-      background-color: #009dee;
-      color: #fff;
+      background-color: #B6B6B6;
       transition: all 0.5s ease; }
 
 /*content*/
@@ -355,14 +357,14 @@ main {
     padding: 3%;
     float: left; }
     .content .half-column p {
-      color: #51555b;
+      color: #6D6D6D;
       font: 16px Lato, sans-serif; }
       .content .half-column p a {
         width: 20%;
         padding: 10px;
         margin-top: 10px;
         display: block;
-        background-color: #4caf50;
+        background-color: #005AA0;
         color: #fff;
         font: 16px Lato, sans-serif;
         text-decoration: none; }
@@ -375,11 +377,33 @@ main {
       padding: 2% 0 2%;
       font: 24px Lato, sans-serif; }
       .content .half-column h2 a {
-        color: #33363b;
+        color: #484848;
         text-decoration: none; }
 
 .advertisement {
   width: 15%;
   float: left; }
+
+/*post styling*/
+.post {
+  padding: 0 3%; }
+  .post img {
+    width: 500px;
+    height: 500px;
+    display: block; }
+  .post h2 {
+    font: 24px Lato, sans-serif;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-weight: bold; }
+  .post h3 {
+    font: 20px Lato, sans-serif;
+    margin: 20px 0;
+    font-weight: bold; }
+  .post p {
+    font: 16px Lato, sans-serif;
+    margin: 20px 0; }
+  .post p:last-child {
+    margin-bottom: 100px; }
 
 /*# sourceMappingURL=style.css.map */

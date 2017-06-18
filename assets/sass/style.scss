@@ -272,6 +272,9 @@
 }
 $font : Lato, sans-serif;
 $white: #fff;
+$blue: #005AA0;
+$header-color:#484848;
+$paragraph-color: #6D6D6D;
 
 /*header styling*//*header styling*//*header styling*//*header styling*/
 
@@ -299,14 +302,14 @@ header {
     font: 14px $font;
   }
   input[type="text"]:focus{
-    border: 2px solid #009dee;
+    border: 2px solid $blue;
     transition: border 0.5s;
   }
   input[type="submit"]{
     padding: 8px 15px;
     margin-left: -4px;
     border-radius: 0 5px 5px 0;
-    background-color: #009dee;
+    background-color:$blue;
     color: #fff;
     font: 14px $font;
     text-transform: uppercase;
@@ -315,7 +318,7 @@ header {
     background-color: #4caf50;
   }
 	.navigation {
-    background-color: #009dee;
+    background-color:$blue;
   }
   .navigation-flex {
     display:flex;
@@ -335,7 +338,9 @@ header {
         text-decoration: none;
         
         &:hover{
-          background-color: #4caf50;
+          background-color:$white;
+          box-shadow: 1px 1px 2px 1px $paragraph-color;
+          color: $blue;
           transition: all 0.5s ease;
         }
       }
@@ -347,17 +352,17 @@ header {
       list-style-type: none;
         
       a {
-        padding: 15px 15px;
+        padding: 18px 15px;
         display: inline-block;
         &:hover {
-         background-color:  #4caf50; 
-         transition: all 1s ease;
+          transform: scale(1.5);
+         transition: all 0.5s ease;
         }
       }
     }
   }
   .fa {
-    font-size: 30px;
+    font-size: 24px;
     color: $white;
   }
 }
@@ -382,19 +387,20 @@ main {
     text-transform: uppercase;
   }
   li {
-    list-style-type: none;
     margin-bottom: 10px;
+    list-style-type: none;
+    
     a {
-      padding: 10px 0;
+      padding: 12px 0 12px 7px;
+      border-radius: 3px;
       display: block;
-      background-color:  #4caf50;
+      background-color:#919191;
       color: #000;
       font: 400 14px $font;
       text-decoration: none;
       text-transform: uppercase;
         &:hover {
-        background-color:  #009dee;
-        color: $white;
+          background-color:#B6B6B6;
         transition: all 0.5s ease; 
       
       }
@@ -429,14 +435,14 @@ main {
     padding: 3%;
     float: left;
     p {
-      color:#51555b;
+      color: $paragraph-color;
       font: 16px $font;
       a {
         width: 20%;
         padding: 10px;
         margin-top: 10px;
         display: block;
-        background-color:  #4caf50;
+        background-color: $blue;
         color: $white;
         font: 16px $font;
         text-decoration: none;
@@ -453,7 +459,7 @@ main {
       padding: 2% 0 2%;
       font: 24px $font;
       a{
-        color: #33363b;
+        color: $header-color;
         text-decoration: none;
 
       }
@@ -463,4 +469,35 @@ main {
 .advertisement {
   width: 15%;
   float: left;
+}
+
+/*post styling*/
+
+.post {
+  padding: 0 3%;
+  
+  img {
+    width: 500px  ;
+     height: 500px;
+     display: block;
+  }
+  h2 {
+    font: 24px $font;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+
+  }
+  h3 {
+    font: 20px $font;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  p {
+    font: 16px $font;
+    margin: 20px 0;
+  }
+  p:last-child {
+    margin-bottom: 100px;
+  }
 }
